@@ -140,6 +140,7 @@ select {
      font-family: 'Noto Sans JP', sans-serif;
      width: 100%;
      color: black;
+     background-color: white;
   }
   .dropdown { /*container for custom dropdown arrow*/
     -webkit-appearance: none;
@@ -150,6 +151,7 @@ select {
    background-position: right center;
    opacity: 0.5;
    background-size: 6.5%;
+   background-color: white;
   }
   select option {
       background-color: white;
@@ -453,6 +455,7 @@ a {
 	}
 	.dropdown {
 		font-size: 0.77em;
+    background-color: white;
 	}
 	p {
 		font-size: 0.8em;
