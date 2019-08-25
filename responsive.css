@@ -152,6 +152,7 @@ select {
    background-position: right center;
    opacity: 0.5;
    background-size: 6.5%;
+   background-color: none;
   }
   select option {
       background-color: white;
@@ -455,7 +456,7 @@ a {
 	}
 	.dropdown {
 		font-size: 0.77em;
-    background-color: white;
+    background-color: none;
 	}
 	p {
 		font-size: 0.8em;
