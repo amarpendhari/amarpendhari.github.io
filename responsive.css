@@ -29,9 +29,6 @@ body{
 
 
 
-/
-/
-/
 
 /* BODY */
 p {
@@ -132,6 +129,7 @@ input[type=text] {
   } 
   ::placeholder {
     color: black;
+    background-color: none;
   }
   input {
     color: black;
