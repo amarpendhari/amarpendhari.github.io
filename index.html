@@ -2,41 +2,47 @@
 <html>
 <head>
 	<title>Candidate Form</title>
-    <link rel="stylesheet"  type="text/css" href="form.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <meta name="viewport" content="width-device-width,initial scale=1"/>
+	  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-<div class="navbar">
- <!--   <a class="navbar-brand" href="#">
-    <img src="narita.jpg">
-    </a>
-    <h3>Narita</h3>
-            <p>Monday</p>   -->
-        <ul>    
-                <li><a class="navbar-img" href="#"><img src="./narita.JPG"  style="border: 2px solid white"></a></li>
-            <div class="navtext">  
-                <li><a href="#"  style="font-size: 1em;color: black">Narita Sabharwal</a>
-                    <a href="#" style="font-size: 0.8em;color: black">Monday, 10th May</a></li>
-            </div>
-            
-            <div class="leftnav">  
-                 <li>   <a href="#" id="notify">Notifications</a> </li>
-                   
-                    <a href="#" class="leftnav-icons"><img src="./add profile.JPG"></a> 
+
+<div class="container-fluid">
+	<div class="row" id="navbar">
+		<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"> </div>
+    	
+    	<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+    		<div class="grid">
+				<img src="narita.jpg">
+					<div><a href="#" style="font-size: 1em;color: black">Narita Sabharwal</a><br>
+                    <a href="#" style="font-size: 0.8em;color: black">Monday, 10th May</a></div>
+			</div>
+    	</div>
+    
+    <div class="col-5 col-sm-5 col-md-5 col-lg-4 col-xl-4" id="img-reso">
+      				<a href="#" id="notify">Notifications</a> </li>
+                    <a href="#" class="leftnav-icons"><img src="add profile.jpg"></a> 
                     <a href="#" class="leftnav-icons"><img src="setting.JPG"></a> 
                     <a href="#" class="leftnav-icons"><img src="log inout.JPG"></a>
-                     
-                     
-            </div> 
-        </ul>  
-</div> 
-
+    </div>
+    
+   
+	</div>
+</div>
 <div class="content">
-    <div class="rightbox">
+<div class="container">
+	<div class="row">
+		
+    	
+    	<div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" id="rightbox">
+    		<div class="">
+				<div class="rightbox">
         <div id="rightboxone">
-                <div id="pic"><img src="./narita.JPG"></div>
+                <div id="pic"><img src="narita.jpg"></div>
                     <div id="rbox1text">  
                       <p>Narita Sabharwal (25, Female) </p>
                             <p>IN,Delhi,New Delhi(Civil Lines)</p>
@@ -46,90 +52,227 @@
                     </div>
         </div>
     <div id="rightboxtwo">
-        <a href="#" style="color: black">Academic background</a>
-        <a href="#">Work Experience</a>
-        <a href="#">Co & Extra-curricular</a>
-    </div>
+            <a href="#">Acedemic Background</a>
+            <a href="#">Work Experience</a>
+            <a href="#">Co & Extra-Curricular</a>
+    </div>	
+            
 
     <div id="rightboxthree">
         <div id="rbox3pad">
-            Level of Education<i class="fa fa-sort-desc" aria-hidden="true"></i><hr>
-            Institute Location<i class="fa fa-pencil" aria-hidden="true"></i><hr>
-            Affliated to<i class="fa fa-sort-desc" aria-hidden="true"></i><hr>
-            Year of Graduation<i class="fa fa-sort-desc" aria-hidden="true"></i><hr>
-            Marks scored (in %)<i class="fa fa-pencil" aria-hidden="true"></i><hr>
+            <select class="dropdown">
+	 			<option value="">Level of Education</option>
+   				<option value="hurr">SSC</option>
+    			<option value="bruh">HSC</option>
+			</select><hr>
+
+            <input type="text" placeholder="Institute Location"><hr>
+            
+            <select class="dropdown">
+	 			<option value="">Affliated to</option>
+   				<option value="hurr">MU</option>
+    			<option value="bruh">IITB</option>
+			</select><hr>
+           
+            <select class="dropdown">
+	 			<option value="">Years of Graduation</option>
+   				<option value="hurr">2019</option>
+    			<option value="bruh">2018</option>
+			</select><hr>
+           
+            <input type="text" placeholder="Marks scored (in %) "><hr>
+            
         </div>
-            <div>Name of Institute<i class="fa fa-pencil" aria-hidden="true"></i><hr>
-                 Name of course<i class="fa fa-pencil" aria-hidden="true"></i><hr>
-                 Name of affliated body<i class="fa fa-pencil" aria-hidden="true"></i><hr>
-                 Specialized in<i class="fa fa-pencil" aria-hidden="true"></i><hr>
+            <div><input type="text" placeholder="Name of Institute"><hr>
+                <input type="text" placeholder="Name of course"><hr>
+                 <input type="text" placeholder="Name of affliated body"><hr>
+                 <input type="text" placeholder="Specialized in"><hr>
                 <div id="rbox3flex">
-                    <div class="pad">Hard skills developed<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div>Languages learned<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
+                <div class="pad">    
+                	<select class="dropdown">
+	 				<option value="">Hard Skills developed</option>
+   					<option value="hurr">Design</option>
+    				<option value="bruh">Marketing</option>
+			    	</select><hr>     
+			    </div>
+                <div>   
+                	<select class="dropdown">
+	 				<option value="">Languages Learned</option>
+   					<option value="hurr">JS</option>
+    				<option value="bruh">HTML</option>
+					</select><hr>
+				</div>
                 </div>
             </div>
     </div>
 
     <div id="rightboxfour">
         <div class="rbox4text">
-                <p style="font-size: 0.8em;">Critical project #1</p><hr>
-                Project Title<i class="fa fa-pencil" aria-hidden="true"></i><hr>
-                <div class="rbox4pad1"><div class="pad">Industry<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div class="pad">Sub-Industry<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div>Function<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div class="pad">No. of team members<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div class="pad">Hard skill utilized<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div>Soft skill utilized<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
+                <p>Critical project #1</p><hr>
+                <input type="text" placeholder="Project Title"><hr>
+
+                <div class="rbox4pad1">
+                    <div class="pad">
+                        <select class="dropdown">
+	 				        <option value="">Industry</option>
+   					        <option value="hurr">IT</option>
+    				        <option value="bruh">Consultancy</option>
+					    </select><hr>
+				    </div>
+                    <div class="pad">
+                        <select class="dropdown">
+	 				        <option value="">Sub-Industry</option>
+   					        <option value="hurr">Developer</option>
+    				        <option value="bruh">Designer</option>
+					    </select><hr>
+					</div>
+                    <div>   
+                	    <select class="dropdown">
+	 				        <option value="">Function</option>
+   					        <option value="hurr">Team Leader</option>
+    				        <option value="bruh">Assistant</option>
+					    </select><hr>
+					</div>
+                    <div class="pad">
+                        <select class="dropdown">
+	 				        <option value="">No. of team members</option>
+   					        <option value="hurr">2</option>
+    				        <option value="bruh">4</option>
+					    </select><hr>
+					</div>
+                    <div class="pad">
+                        <select class="dropdown">
+	 				        <option value="">Hard Skils Utilized</option>
+   					        <option value="hurr">Leadership</option>
+    				        <option value="bruh">Project Management</option>
+					    </select><hr>
+					</div>
+                    <div><select class="dropdown">
+	 				        <option value="">Soft Skils Utilized</option>
+   					        <option value="hurr">Team Work</option>
+    				        <option value="bruh">Work Ethic</option>
+					    </select><hr>
+					</div>
                 </div> 
                     <div class="rbox4pad2">
-                        <div class="pad">Most apt statement describing your role<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                        <div>Project duration<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
+                        <div class="pad">
+                            <select class="dropdown"  style="background-size: 3.2%">
+	 				            <option value="">Most apt statement describing your role</option>
+   					            <option value="hurr">Ability to learn from mistakes</option>
+    				            <option value="bruh">Creative thinking</option>
+					        </select><hr>
+					    </div>
+                
+                        <div><select class="dropdown">
+	 				            <option value="">Project Duration</option>
+   					            <option value="hurr">2 months</option>
+    				            <option value="bruh">3 months</option>
+					        </select><hr>
+				        </div>
                     </div>
         </div>
     </div>
 
     <div id="rightboxfive">
-        <p style="font-size: 0.8em;">Position of Responsibility #1</p><hr>
-        <div class="rbox5grid">
-            <div id="rbox5innerbox">Title<i class="fa fa-pencil" aria-hidden="true"></i><hr>
-                Name of the identity being led/managed<i class="fa fa-pencil" aria-hidden="true"></i><hr>
-                <div id="rbox5grid1">
-                    <div class="pad">Focus of Entity<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div>Competitiveness<i class="fa fa-sort-desc" aria-hidden="true"></i></i><hr></div>
-                    <div class="pad">Hard skills utilized<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                    <div>Soft skills utilized<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                </div>
-                    <div>Moast apt statement describing your performance<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-            </div>    
-            <div>
-                <div>Level<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                <div>Type of Entity<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                <div>Team size<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                <div>Start date<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-                <div>End<i class="fa fa-sort-desc" aria-hidden="true"></i><hr></div>
-           </div>    
+            <p>Position of Responsibility #1</p><hr>
+            <div class="rbox5grid">
+                <div id="rbox5innerbox"><input type="text" placeholder="Title"><hr>
+                   <input type="text" placeholder=" Name of the identity being led/managed"><hr>
+                    <div id="rbox5grid1">
+                        <div class="pad"><select class="dropdown">
+                         <option value="">Focus of Entity</option>
+                           <option value="hurr">Exposure Lvl</option>
+                        <option value="bruh">Saturation Lvl</option>
+                        </select><hr>
+                    </div>
+                        <div><select class="dropdown">
+                         <option value="">Competitiveness</option>
+                           <option value="hurr">Easy</option>
+                        <option value="bruh">Hard</option>
+                        </select><hr>
+                    </div>
+                        <div class="pad"><select class="dropdown">
+                         <option value="">Hard skills utilized</option>
+                           <option value="hurr">Art</option>
+                        <option value="bruh">Photography</option>
+                        </select><hr>
+                    </div>
+                        <div><select class="dropdown">
+                         <option value="">Soft skills utilized</option>
+                           <option value="hurr">Communication Skills</option>
+                        <option value="bruh">Problem Solving Skills</option>
+                        </select><hr>
+                    </div>
+                    </div>
+                        <div><select class="dropdown" style="background-size: 3.2%">
+                         <option value="">Most apt statement describing your performance</option>
+                           <option value="hurr">Productivity</option>
+                        <option value="bruh">Problem Solving</option>
+                        </select><hr>
+                    </div>
+                </div>    
+                <div>
+                    <div><select class="dropdown">
+                         <option value="">Level</option>
+                           <option value="hurr">Beginner</option>
+                        <option value="bruh">Expert</option>
+                        </select><hr>
+                    </div>
+                    <div><select class="dropdown">
+                         <option value="">Type of Entity</option>
+                           <option value="hurr">Easy</option>
+                        <option value="bruh">Hard</option>
+                        </select><hr>
+                    </div>
+                    <div><select class="dropdown">
+                         <option value="">Team Size</option>
+                           <option value="hurr">1</option>
+                        <option value="bruh">2</option>
+                        </select><hr>
+                    </div>
+                    <div><select class="dropdown">
+                         <option value="">Start Date</option>
+                           <option value="hurr">ASAP</option>
+                        <option value="bruh">1 week later</option>
+                        </select><hr>
+                    </div>
+                    <div><select class="dropdown">
+                         <option value="">End Date</option>
+                           <option value="hurr">ASAP</option>
+                        <option value="bruh">ASAP</option>
+                        </select><hr>
+                    </div>
+               </div>    
+            </div>
         </div>
-    </div>
 
     <div id="rightboxsix">
         <a href="">Add another critical project</a><hr>
         <a href="">Add another position of responsibility</a><hr>
     </div>
             
-    <div id="rightboxseven">
-        <ul>
-            <li><a class="button" href="">Delete</a></li>
-            <li><a class="button" href="">Close</a></li>
-            <li><a class="button" href="">Save</a></li>
-        </ul>
+    <div id="rightboxseven"><ul>
+        <div class="container">
+        	<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"> </div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">	
+                    <li><a class="button" href="">Delete</a></li>
+            		<li><a class="button" href="">Close</a></li>
+            		<li><a class="button" href="">Save</a></li></div>
+            	
+    		</div>    
+	        </div>
+	        </ul>
     </div>
 </div>  
-
-
-<div class="leftbox">
+			</div>
+    	</div>
+    
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"  id="leftbox">
+      	<div class="leftbox">
 
     <div id="leftboxone">
-        <img src="./fingerprint.JPG">
+        <img src="./fingerprint.jpg">
     </div>
 
     <div id="leftboxtwo">
@@ -142,7 +285,7 @@
        
     <div id="leftboxfour">
         <div class="lbox4">
-            <div class="col-md-6">
+            <div class="boxfour">
                 <p>Remuneration</p>
                     <div class="ranger-text">
                         Matters little<span style="float:right">Most Important</span>
@@ -173,32 +316,44 @@
         
     <div class="leftboxfive">
             <i class="fa fa-check-square" aria-hidden="true" style="margin-top: 2px;font-size: 22px;"></i>
-            <div id="right"> Willing to Migrate to:<i class="fa fa-sort-desc" aria-hidden="true"></i>
-                <hr >
-            </div>
+            <div id="right"><select class="dropdown" style="background-size: 5%">
+                    <option value="">Willing to Migrate to:</option>
+                      <option value="hurr">Kandivali</option>
+                   <option value="bruh">Chembur</option>
+                   </select><hr>
+               </div>
     </div>
         
     <div id="leftboxsix">
             <a class="btn" href="">Awaiting More Input</a>
     </div>
 
+    </div>			
     </div>
+</div>    
+   
+	</div>
 </div>
-</body>
-
-    <footer  class="footer-nav">
+<footer  class="footer-nav">
         <ul style="margin-bottom: -16px">
-                <li>About Us</li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
-                <li>Contact us</li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
-                <li>Terms & conditions</li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
-                <li>Privacy Policy</li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
-                <li>FAQ</li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
-                <li>Blog</li>
+        	<div class="container-fluid">
+        		<div class="row" id="foot">
+				<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"> </div>
+				<div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <li><a href="#">About Us</a></li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
+                <li><a href="#">Contact Us</a></li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
+                <li><a href="#">Terms & conditions</a></li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
+                <li><a href="#">Privacy Policy</a></li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
+                <li><a href="#">FAQ</a></li><i class="fa fa-circle" style="color:white;font-size:10px" aria-hidden="true"></i>
+                <li><a href="#">Blog</a></li>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"> </div>
+        </div>
+    </div>
         </ul>
-    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
-    
-
-
-
-
